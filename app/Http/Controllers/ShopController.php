@@ -15,7 +15,7 @@ class ShopController extends Controller
         return view( 'shop', compact( 'shopDetails' ) );
     }
 
-    public function collectionsIndex()
+    public function collectionIndex()
     {
 
         $shop = Auth::user();
@@ -23,4 +23,15 @@ class ShopController extends Controller
 
         return view( 'collections.index', compact( 'data' ) );
     }
+
+    public function collectionStore()
+    {
+
+    }
+
+    public function productsIndex()
+    {}
+
+    public function products()
+    {}
 }
